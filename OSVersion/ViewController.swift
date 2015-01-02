@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblMinorVersion: UILabel!
     @IBOutlet weak var lblPatchVersion: UILabel!
     
+    @IBOutlet weak var lblMinimum8: UILabel!
+    @IBOutlet weak var lblMinimum7: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,6 +26,10 @@ class ViewController: UIViewController {
         lblMajorVersion.text = "Major: \(info.majorVersion)";
         lblMinorVersion.text = "Minor: \(info.minorVersion)";
         lblPatchVersion.text = "Patch: \(info.patchVersion)";
+        
+        lblMinimum7.text = "At Least 7.0: \(OSVersion.isAtLeastVersion(7))"
+        lblMinimum8.text = "At Least 8.0: \(OSVersion.isAtLeastVersion(8))"
+        
         
     }
 

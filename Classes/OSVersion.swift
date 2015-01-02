@@ -41,4 +41,15 @@ class OSVersion{
         return info;
     }
     
+    class func isAtLeastVersion(major: Int, minor: Int = 0, patch: Int = 0) -> Bool{
+        var info = deviceVersion();
+        
+        if (info.majorVersion >= major && info.minorVersion >= minor && info.patchVersion >= patch){
+            return true;
+        }
+        
+        return false;
+        
+    }
+    
 }

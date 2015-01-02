@@ -35,20 +35,38 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="At Least 8.0:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ort-ua-Kbc">
+                                <rect key="frame" x="176" y="205" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="At Least 7.0:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-55-E4e">
+                                <rect key="frame" x="176" y="234" width="249" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ort-ua-Kbc" firstAttribute="top" secondItem="sq5-hF-a9m" secondAttribute="bottom" constant="54" id="2hb-A2-LHS"/>
                             <constraint firstAttribute="centerX" secondItem="u5B-9t-EER" secondAttribute="centerX" constant="-0.5" id="NcH-Py-KSP"/>
+                            <constraint firstAttribute="centerX" secondItem="ort-ua-Kbc" secondAttribute="centerX" constant="-0.5" id="WNj-Iu-hHu"/>
                             <constraint firstItem="u5B-9t-EER" firstAttribute="top" secondItem="NqF-3G-J34" secondAttribute="bottom" constant="8" id="asX-Ht-ud7"/>
                             <constraint firstAttribute="centerX" secondItem="sq5-hF-a9m" secondAttribute="centerX" constant="-0.5" id="bu5-Sw-lLR"/>
                             <constraint firstAttribute="centerX" secondItem="NqF-3G-J34" secondAttribute="centerX" id="csC-WF-LXh"/>
                             <constraint firstItem="sq5-hF-a9m" firstAttribute="top" secondItem="u5B-9t-EER" secondAttribute="bottom" constant="8" id="eMw-14-4PJ"/>
+                            <constraint firstItem="Jga-55-E4e" firstAttribute="top" secondItem="ort-ua-Kbc" secondAttribute="bottom" constant="8" id="pa7-nJ-iEG"/>
                             <constraint firstItem="NqF-3G-J34" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="qSG-mc-wAl"/>
+                            <constraint firstAttribute="centerX" secondItem="Jga-55-E4e" secondAttribute="centerX" constant="-0.5" id="tvu-bY-Zsh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="OSVersion" id="upL-fX-K0G"/>
                     <connections>
                         <outlet property="lblMajorVersion" destination="NqF-3G-J34" id="onN-tU-6Qx"/>
+                        <outlet property="lblMinimum7" destination="Jga-55-E4e" id="bfJ-3Y-kcT"/>
+                        <outlet property="lblMinimum8" destination="ort-ua-Kbc" id="7V8-0X-ct5"/>
                         <outlet property="lblMinorVersion" destination="u5B-9t-EER" id="8ZY-b3-TLt"/>
                         <outlet property="lblPatchVersion" destination="sq5-hF-a9m" id="Bzs-b7-sSA"/>
                     </connections>

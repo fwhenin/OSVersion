@@ -13,6 +13,10 @@
 		5A84BEB51A563CCE001DF202 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84BEB41A563CCE001DF202 /* Images.xcassets */; };
 		5A84BEB81A563CCE001DF202 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A84BEB61A563CCE001DF202 /* LaunchScreen.xib */; };
 		5A84BEC41A563CCE001DF202 /* OSVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84BEC31A563CCE001DF202 /* OSVersionTests.swift */; };
+		5A84BECF1A563D28001DF202 /* OSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84BECE1A563D28001DF202 /* OSVersion.swift */; };
+		5A84BED11A563F0F001DF202 /* OSVersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84BED01A563F0F001DF202 /* OSVersionInfo.swift */; };
+		5A84BED21A564164001DF202 /* OSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84BECE1A563D28001DF202 /* OSVersion.swift */; };
+		5A84BED31A564168001DF202 /* OSVersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A84BED01A563F0F001DF202 /* OSVersionInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 		5A84BEBD1A563CCE001DF202 /* OSVersionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSVersionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A84BEC21A563CCE001DF202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A84BEC31A563CCE001DF202 /* OSVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSVersionTests.swift; sourceTree = "<group>"; };
+		5A84BECE1A563D28001DF202 /* OSVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSVersion.swift; path = Classes/OSVersion.swift; sourceTree = "<group>"; };
+		5A84BED01A563F0F001DF202 /* OSVersionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OSVersionInfo.swift; path = Classes/OSVersionInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 		5A84BE9F1A563CCE001DF202 = {
 			isa = PBXGroup;
 			children = (
+				5A84BECD1A563D06001DF202 /* Classes */,
 				5A84BEAA1A563CCE001DF202 /* OSVersion */,
 				5A84BEC01A563CCE001DF202 /* OSVersionTests */,
 				5A84BEA91A563CCE001DF202 /* Products */,
@@ -110,6 +117,15 @@
 				5A84BEC21A563CCE001DF202 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A84BECD1A563D06001DF202 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5A84BECE1A563D28001DF202 /* OSVersion.swift */,
+				5A84BED01A563F0F001DF202 /* OSVersionInfo.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84BECF1A563D28001DF202 /* OSVersion.swift in Sources */,
 				5A84BEB01A563CCE001DF202 /* ViewController.swift in Sources */,
+				5A84BED11A563F0F001DF202 /* OSVersionInfo.swift in Sources */,
 				5A84BEAE1A563CCE001DF202 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A84BED21A564164001DF202 /* OSVersion.swift in Sources */,
+				5A84BED31A564168001DF202 /* OSVersionInfo.swift in Sources */,
 				5A84BEC41A563CCE001DF202 /* OSVersionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OSVersion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -349,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OSVersion/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

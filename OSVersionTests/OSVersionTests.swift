@@ -21,16 +21,15 @@ class OSVersionTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testVersion() {
+        
+        var info = OSVersion.parseVersionString("3.1.2");
+        
+        XCTAssertEqual(3,info.majorVersion);
+        XCTAssertEqual(1,info.minorVersion);
+        XCTAssertEqual(2,info.patchVersion);
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }
